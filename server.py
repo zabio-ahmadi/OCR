@@ -41,6 +41,7 @@ def center_digit(image):
     return mask
 
 
+# send the front end on landing page request 
 @app.get("/", response_class=HTMLResponse)
 async def read_item(request: Request):
     return templates.TemplateResponse("index.html", {"request": request})
